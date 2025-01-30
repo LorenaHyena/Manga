@@ -1,0 +1,114 @@
+/* Resetando margens e padding para um layout mais limpo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo do site */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #111;
+    color: #fff;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    color: #9b0000;
+    font-family: 'Rock Salt';
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #9c00b1;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    color: #bb0000;
+}
+
+/* Seção do capítulo */
+main {
+    margin-top: 40px;
+}
+
+.capitulo {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.capitulo h2 {
+    font-size: 2.5em;
+    color: #970000;
+    margin-bottom: 20px;
+}
+
+.conteudo p {
+    font-size: 1.1em;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.imagem-capitulo img {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+footer p {
+    color: #bbb;
+    font-size: 1em;
+}
+
+/* Estilo de navegação em dispositivos móveis */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .capitulo h2 {
+        font-size: 2em;
+    }
+
+    .conteudo p {
+        font-size: 1em;
+    }
+}
