@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+/* Resetando margens e padding para evitar comportamentos inesperados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo do site */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #222;
+    color: #fff;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+/* Container principal */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo para os títulos principais */
+h1 {
+    text-align: center;
+    color: #770010;
+    font-family: 'Rock Salt';
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #e0bb16;
+    font-family: 'Rock Salt';
+    margin-bottom: 20px;
+}
+/* Linha horizontal estilizada */
+hr {
+    border: 0;
+    border-top: 1px solid #444;
+    margin: 20px 0;
+}
+
+/* Seção de capítulos */
+.capitulos {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Opções de capítulos */
+.options {
+    display: flex;
+    flex-direction: wrap;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.option {
+    background-color: #000000;
+    color: #ffc400;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    margin: 10px 0;
+    width: 200px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.option:hover {
+    background-color: #800000;
+    color: #a200ff;
+    transform: translateY(-3px);
+}
+
+
+.option:active {
+    background-color: #b80000;
+}
+
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+    .options {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .option {
+        width: 100%;
+        font-size: 1.1em;
+    }
+}
